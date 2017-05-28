@@ -1,10 +1,10 @@
 <!--  
-var frequencyCap = 5; 
+var frequencyCap = 10; 
 function setCookie(cookieName,cookieValue, expirehours) {
   if (frequencyCap > 0) {
 	var today = new Date();
 	var expire = new Date();
- 	expire.setTime(today.getTime() + 360000 * frequencyCap);
+ 	expire.setTime(today.getTime() + 60000 * frequencyCap);
  	document.cookie = cookieName+"="+escape(cookieValue) + ";expires="+expire.toGMTString();
   } else {
  	document.cookie = cookieName+"="+escape(cookieValue);
